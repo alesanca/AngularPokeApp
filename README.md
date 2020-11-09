@@ -1,5 +1,5 @@
 # AngularPokeApp
-Una aplicación de Pokémon que nos permite mostrar la pokédex de entre la primera y la quinta generación, además de crear nuestro propio equipo.ç
+Una aplicación de Pokémon que nos permite mostrar la pokédex de entre la primera y la quinta generación, además de crear nuestro propio equipo.
 
 Para usar la aplicación tienes que usar en la consola de comandos "npm -i".
 
