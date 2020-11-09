@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+body{
+  margin: 0;
+  background-color: #66ffff;
+}
+
+/* NAVBAR */
+
+.navbar{
+  height: 90px;
+  background-color: #ff6666;
+  width: 100%;
+}
+
+.navbar h2{
+padding-left: 2%;
+padding-top: 1%;
+position: static;
+}
+
+.navbar_button , .navbar_button1 , .navbar_input{
+  float: left;
+}
+
+.navbar_button1{
+  margin-left: 1%;
+  margin-right: 2px;
+}
+
+.navbar_button{
+  margin-left: 10px;
+}
+
+
+/* GRID */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 0.1fr));
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 50%;
+
+}
+
+.card-item{
+  border: black solid 2px;
+  height: 145px;
+  width: 145px;
+  margin: 2px ;
+  float: left;
+  background-color: #ffff99;
+  text-align: center;
+}
+
+.main{
+  margin-top: 3.5%;
+  display: grid;
+  grid-template-columns: 2fr 0.5fr;
+
+  margin-left: 2%;
+}
+
+.pokemon_card {
+  border: black solid 2px;
+  height: 250px;
+  width: 200px;
+  margin: 100px auto ;
+  background-color: #99ff99;
+}
+
+

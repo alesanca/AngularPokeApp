@@ -1,0 +1,21 @@
+<div class="laura2" *ngIf="show == true">
+  <div class="pokemon_card">
+    <div class="singleImg">
+      <img src={{pokeInfo.url}}>
+    </div>
+    {{pokeInfo.name}}
+    <div class="pokeSkills">
+      {{pokeInfo.skill1}} {{pokeInfo.skill2}}
+    </div>
+    <div class="pokeType">
+      {{pokeInfo.type}}
+    </div>
+    Atk: {{pokeInfo.atk}}
+    Def: {{pokeInfo.def}}
+    Special Atk: {{pokeInfo.speAtk}}
+    Special Def: {{pokeInfo.speDef}}
+    Hp: {{pokeInfo.hp}}
+    <button (click)="addToTeam(pokeInfo)">Añadir al equipo</button>
+    <button (click)="saveTeam()">Guardar equipo</button>
+  </div>
+</div>

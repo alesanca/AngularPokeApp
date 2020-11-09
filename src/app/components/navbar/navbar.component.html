@@ -1,0 +1,33 @@
+<h2>PokeApp</h2>
+<div class="navbar_content">
+  <div class="navbar_button1">
+    <button (click)="searchPokemon(newName)"> Enviar </button>
+  </div>
+  <div class="navbar_input">
+    <input type="text" placeholder="Inserta un nombre de pokémon" [(ngModel)]="newName">
+  </div>
+
+  <div class="navbar_button">
+    <button (click)="showPokemons(151, 0)">Mostrar 1º generación</button>
+  </div>
+  <div class="navbar_button">
+    <button (click)="showPokemons(100, 151)">Mostrar 2º generación</button>
+  </div>
+  <div class="navbar_button">
+    <button (click)="showPokemons(135, 251)">Mostrar 3º generación</button>
+  </div>
+  <div class="navbar_button">
+    <button (click)="showPokemons(107, 386)">Mostrar 4º generación</button>
+  </div>
+  <div class="navbar_button">
+    <button (click)="showPokemons(156, 493)">Mostrar 5º generación</button>
+  </div>
+  <div class="navbar_button">
+    <button (click)="showTeam()">Mostrar equipo</button>
+  </div>
+
+
+</div>
+
+<app-show-pokemon [searchPokedex]="searchPokedex" [arrayPokemon]="arrayPokemon" [teamPokemon]="teamPokemon"
+  [show]="show" [showInput]="showInput"></app-show-pokemon>

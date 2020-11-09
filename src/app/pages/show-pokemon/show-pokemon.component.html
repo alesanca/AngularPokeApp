@@ -1,0 +1,25 @@
+<div class="main">
+  <div class="laura">
+    <div class="card-item" *ngIf="showInput == true">
+      <span>
+        {{searchPokedex[0]}}
+        <img src={{searchPokedex[1]}} href="">
+        <button (click)="getInfo(searchPokedex[0])">Mostrar más</button>
+      </span>
+    </div>
+
+    <div *ngFor="let pokemon of arrayPokemon" class="card-item">
+      <b> {{pokemon.name}} </b>
+      <img src={{pokemon.url}}>
+      <button (click)="getInfo(pokemon.name)">Mostrar más</button>
+    </div>
+
+    <div *ngFor="let team of teamPokemon" class="card-item">
+      <b> {{team.name}} </b>
+      <img src={{team.url}}>
+      <button (click)="deletePokemon(team.pos)">Eliminar pokemon</button>
+    </div>
+
+  </div>
+  <app-single-pokemon [pokeInfo]="pokeInfo" [show]="show"></app-single-pokemon>
+</div>
